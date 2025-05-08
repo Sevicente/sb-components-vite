@@ -2,6 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { MyLabel } from "../components/MyLabel";
 
 
+
 const meta = { //Creación del componente para Storybook
 
     title:'UI/labels/MyLabel',//Localización en carpetas de mi componente
@@ -23,8 +24,6 @@ type Story = StoryObj<typeof meta>;
 export const Basic: Story = {
     args:{
         label:'Basic label',
-        
-
         
     }
 
@@ -49,5 +48,14 @@ export const CustomColor: Story = {
         label:'CustomColor label',
         fontColor:'#5517ac'
     }
-
 }
+
+export const CustombackgroundColor: Story = {
+    args:{
+        size:"h1",
+        label:'CustombackgroundColor label',
+        fontColor:'white',
+        backgroundColor:'black', 
+    },
+}
+
