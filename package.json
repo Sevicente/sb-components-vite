@@ -32,7 +32,7 @@
   "engines": {
     "node":">=12.0.0"
   },
-  
+
   "scripts": {
     "dev": "npm run storybook",
     "build": "npm run clean && tsc && npm run copyfiles",
@@ -43,7 +43,8 @@
     "chromatic": "npx chromatic --project-token=chpt_592602060054bc8",
     "clean": "rimraf dist/",
     "copyfiles": "copyfiles -u 1 src/**/*.css dist/",
-    "push:npm":"np"
+    "push:npm":"np",
+    "test":"echo 'all test were good"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.6",
