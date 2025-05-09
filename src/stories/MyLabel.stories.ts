@@ -1,9 +1,9 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { MyLabel } from "../components/MyLabel";
+import { MyLabel, type Props } from "../components/MyLabel";
 
 
 
-const meta = { //Creación del componente para Storybook
+const meta:Meta<Props> = { //Creación del componente para Storybook
 
     title:'UI/labels/MyLabel',//Localización en carpetas de mi componente
     component: MyLabel, //Componente
