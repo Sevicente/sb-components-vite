@@ -1,7 +1,7 @@
 {
   "name": "sv-custom-components",
   "private": false,
-  "version": "0.0.1-rc5",
+  "version": "0.1.0",
   "type": "module",
   "main": "dist/index.js",
   "typings": "dist/index.d.js",
@@ -30,9 +30,8 @@
     "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
   },
   "engines": {
-    "node":">=12.0.0"
+    "node": ">=12.0.0"
   },
-
   "scripts": {
     "dev": "npm run storybook",
     "build": "npm run clean && tsc && npm run copyfiles",
@@ -43,8 +42,8 @@
     "chromatic": "npx chromatic --project-token=chpt_592602060054bc8",
     "clean": "rimraf dist/",
     "copyfiles": "copyfiles -u 1 src/**/*.css dist/",
-    "push:npm":"np",
-    "test":"echo 'all test were good"
+    "push:npm": "np",
+    "test": "echo 'all test were good"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.6",
